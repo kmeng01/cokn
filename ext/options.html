@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://getbootstrap.com/docs/4.0/examples/grid/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
+    <title>COKN Options</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./jquery/jquery-ui.css" rel="stylesheet">
+
+    <link href="./options.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+
+        <h1>COKN Health Info Check Settings</h1>
+        <p class="lead">Changes are saved instantly across all devices signed into your Google account.</p>
+
+        <h3>Claim-Spotting Options</h3>
+        <p>Customize how check-worthy factual claims are located and displayed.</p>
+        
+        <div class="row justify-content-center mb-4">
+            <div class="col-3">
+                Defines the minimum check-worthiness score necessary for displaying + checking.
+            </div>
+            <div class="col-9" style="text-align: center;">
+                <div style="width: 100%; margin-top:1vw">
+                    <label data-toggle="tooltip" data-placement="top" title="" data-original-title="Minimum Check-Worthiness Score for Fact-Checking" for="amount">Claim-Spotting Threshold:</label>
+                    <p id="thresholdValue" style="white-space: pre; display: inline; border: 0; color: #f6931f; font-weight: bold;" size="100"></p>
+                    <div id="slider-threshold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="options.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</html>

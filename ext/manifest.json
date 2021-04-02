@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "COKN Health Info Check",
+    "description": "This tool detects check-worthy health-related factual claims on websites and shows you relevant misinformation debunks.",
+    "version": "0.4.1",
+    "icons": {"128": "icon_128.png"},
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["tabs", "storage"],
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["backend.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "options_page": "options.html"
+}

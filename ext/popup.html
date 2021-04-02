@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COKN Health Info Check</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <script src="jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="vericlaim-header">
+      <h1 class="logo">
+        <img src="icon_full.png">
+        COKN Health Info Check
+        <!-- <span class="version">(v1.0)</span> -->
+      </h1>
+    </div>
+    <div class="vericlaim-content">
+      <p>This extension displays related health misinformation debunks via the Google Fact Check Explorer</p>
+    </div>
+    <div class="vericlaim-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <a href="https://www.github.com/idirlab" target="_blank">
+            <i class="fa fa-github" style="color:darksalmon "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://cokn.org/" target="_blank">
+            <i class="fa fa-globe" style="color:darksalmon "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="./options.html" target="_blank">
+            <i class="fa fa-cog" style="color:darksalmon "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="./info.html" target="_blank">
+            <i class="fa fa-info" style="color:darksalmon "></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="vericlaim-claims">
+      <div>
+        <p id="msg-area" style="padding-top: 0px; text-align: center;"></p>
+      </div>
+      <div style="text-align: center;">
+        <div id="loadingSpinner" class="spinner-border mb-3 text-success mx-auto" role="status"><span class="sr-only">Loading...</span></div>
+      </div>
+      <div id="claim-area">
+        
+      </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://getbootstrap.com/docs/4.0/examples/grid/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
+    <title>COKN Options</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./jquery/jquery-ui.css" rel="stylesheet">
+
+    <link href="./info.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+
+        <h1>COKN Health Info Check Usage Information</h1>
+
+        <h3>Purpose</h3>
+        <p><a href="https://chrome.google.com/webstore/detail/cokn-health-info-check/blcdkmjcpgjojjffbdkckaiondfpoglh/" target="_blank">COKN Health Info Check</a> is a Chrome browser plugin that <b>mitigates health-related misinformation</b> by bringing relevant fact checks to Chrome users.</p>
+
+        <h3>Usage Flow & Color Coding on Webpages</h3>
+        <p>When you visit a website, this extension will perform the following:</p>
+        <ol>
+            <li>The <a href="https://idir.uta.edu/claimbuster/" target="_blank">ClaimBuster API</a>, developed at the UT Arlington IDIR Lab, scans the webpage for check-worthy factual claims. These claims will be <claim class="check-worthy">highligted in a pink-orange color</claim>.</li>
+            <li>Each check-worthy factual claim will be passed through the <a href="https://toolbox.google.com/factcheck/apis" target="_blank">Google Fact Check Explorer API</a> to locate related fact-checks from professional outlets. The claims that get results from the Google API will be <claim class="google-found">highlighted in a green-blue color</claim>. Note that the claims for which Google's API cannot find related claims will still be <claim class="check-worthy">highlighted in pink-orange</claim>.</li>
+        </ol>
+
+        Note that both versions of the highlight are scaled in opacity w.r.t the check-worthiness score. A <claim class="check-worthy" style="background: -webkit-gradient(linear, left top, right top, from(#fce3ec7F), to(#ffe8cc7F))">50% check-worthy claim</claim> is much lighter than an <claim class="google-found" style="background: -webkit-gradient(linear, left top, right top, from(#00ff66cc), to(#00d4ffcc))">80% check-worthy claim</claim>.
+
+        <h3>Navigating the Popup</h3>
+        <img src="./popupInfo.png" style="padding-top: 1em; width: 65%;">
+    </div>
+</body>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="options.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</html>
